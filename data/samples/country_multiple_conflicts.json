@@ -1,0 +1,21 @@
+{
+  "company_name": "Monsoon Valley Textiles Pvt Ltd",
+  "country": "India",
+  "tax_id": "12-3456789",
+  "bank_account_number": "555500008888",
+  "bank_code": "12-34-56",
+  "bank_account_holder_name": "Monsoon Valley Textiles Private Limited",
+  "tax_certificate_name": "Monsoon Valley Textiles Pvt Ltd",
+  "bank_country": "India",
+  "contact_email": "accounts@monsoonvalley.example",
+  "documents": [
+    "certificate_of_incorporation",
+    "gst_registration",
+    "bank_letter"
+  ],
+  "document_files": {
+    "certificate_of_incorporation": "data/documents/country_multiple_conflicts_incorporation_certificate.pdf",
+    "gst_registration": "data/documents/country_multiple_conflicts_tax_registration_certificate.pdf",
+    "bank_letter": "data/documents/country_multiple_conflicts_bank_confirmation_letter.pdf"
+  }
+}

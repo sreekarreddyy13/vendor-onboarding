@@ -1,0 +1,21 @@
+{
+  "company_name": "Aarav Industrial Supplies Pvt Ltd",
+  "country": "India",
+  "tax_id": "27AABCU9603R1ZM",
+  "bank_account_number": "000000001234",
+  "bank_code": "HDFC0003456",
+  "bank_account_holder_name": "Aarav Industrial Supplies Private Limited",
+  "tax_certificate_name": "Aarav Industrial Supplies Pvt Ltd",
+  "bank_country": "India",
+  "contact_email": "accounts@aaravindustrial.example",
+  "documents": [
+    "certificate_of_incorporation",
+    "gst_registration",
+    "bank_letter"
+  ],
+  "document_files": {
+    "certificate_of_incorporation": "data/documents/bank_account_same_vendor_incorporation_certificate.pdf",
+    "gst_registration": "data/documents/bank_account_same_vendor_tax_registration_certificate.pdf",
+    "bank_letter": "data/documents/bank_account_same_vendor_bank_confirmation_letter.pdf"
+  }
+}

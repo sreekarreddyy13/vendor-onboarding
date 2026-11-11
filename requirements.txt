@@ -1,0 +1,13 @@
+# Python 3.11+; pin Streamlit for a predictable Community Cloud UI.
+streamlit==1.66.0
+pandas>=2.2,<3
+rapidfuzz>=3.14,<4
+PyYAML>=6.0,<7
+python-dotenv>=1.0,<2
+google-genai>=1.0,<2
+
+# Sample-document generation and local test suite.
+reportlab>=4,<5
+pypdfium2>=4,<6
+Pillow>=10,<13
+pytest>=8,<10

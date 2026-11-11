@@ -1,0 +1,50 @@
+[
+  {
+    "vendor_id": "SAMPLE-001",
+    "company_name": "Aarav Industrial Supplies Pvt Ltd",
+    "country": "India",
+    "tax_id": "27AABCU9603R1ZM",
+    "bank_account_number": "000000001234",
+    "status": "approved"
+  },
+  {
+    "vendor_id": "SAMPLE-002",
+    "company_name": "Blue Oak Software Inc",
+    "country": "US",
+    "tax_id": "12-3456789",
+    "bank_account_number": "000123456789",
+    "status": "approved"
+  },
+  {
+    "vendor_id": "SAMPLE-003",
+    "company_name": "Cedar & Finch Consulting Ltd",
+    "country": "UK",
+    "tax_id": "GB123456789",
+    "bank_account_number": "00001234",
+    "status": "approved"
+  },
+  {
+    "vendor_id": "SAMPLE-004",
+    "company_name": "Delta Fabrication Private Limited",
+    "country": "India",
+    "tax_id": "29AACCD1234E1Z5",
+    "bank_account_number": "000000009876",
+    "status": "approved"
+  },
+  {
+    "vendor_id": "SAMPLE-005",
+    "company_name": "Evergreen Office Products LLC",
+    "country": "US",
+    "tax_id": "98-7654321",
+    "bank_account_number": "000987654321",
+    "status": "approved"
+  },
+  {
+    "vendor_id": "SAMPLE-006",
+    "company_name": "Fableton Logistics PLC",
+    "country": "UK",
+    "tax_id": "123456789",
+    "bank_account_number": "00005678",
+    "status": "approved"
+  }
+]

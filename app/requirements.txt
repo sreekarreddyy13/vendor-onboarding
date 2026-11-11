@@ -1,0 +1,12 @@
+# Streamlit Community Cloud checks beside the selected entrypoint first.
+# Keep this list in sync with the project-root requirements.txt.
+streamlit==1.66.0
+pandas>=2.2,<3
+rapidfuzz>=3.14,<4
+PyYAML>=6.0,<7
+python-dotenv>=1.0,<2
+google-genai>=1.0,<2
+reportlab>=4,<5
+pypdfium2>=4,<6
+Pillow>=10,<13
+pytest>=8,<10

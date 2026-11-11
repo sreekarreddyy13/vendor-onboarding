@@ -1,0 +1,21 @@
+{
+  "company_name": "Sunrise Textiles Pvt Ltd",
+  "country": "India",
+  "tax_id": "29AABCU9603R1ZM",
+  "bank_account_number": "660099001122",
+  "bank_code": "HDFC0002345",
+  "bank_account_holder_name": "SUNRISE TEXTILES PRIVATE LIMITED",
+  "tax_certificate_name": "Sunrise Textiles Private Limited",
+  "bank_country": "India",
+  "contact_email": "accounts@sunrisetextiles.example",
+  "documents": [
+    "certificate_of_incorporation",
+    "gst_registration",
+    "bank_letter"
+  ],
+  "document_files": {
+    "certificate_of_incorporation": "data/documents/name_suffix_match_incorporation_certificate.pdf",
+    "gst_registration": "data/documents/name_suffix_match_tax_registration_certificate.pdf",
+    "bank_letter": "data/documents/name_suffix_match_bank_confirmation_letter.pdf"
+  }
+}

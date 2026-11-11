@@ -1,0 +1,115 @@
+# Deterministic onboarding rules. Keep validation thresholds and patterns here.
+required_fields:
+  India:
+    - company_name
+    - country
+    - tax_id
+    - bank_account_number
+    - bank_code
+  US:
+    - company_name
+    - country
+    - tax_id
+    - bank_account_number
+    - bank_code
+  UK:
+    - company_name
+    - country
+    - tax_id
+    - bank_account_number
+    - bank_code
+
+required_documents:
+  India:
+    - certificate_of_incorporation
+    - gst_registration
+    - bank_letter
+  US:
+    - certificate_of_incorporation
+    - ein_confirmation
+    - bank_letter
+  UK:
+    - certificate_of_incorporation
+    - vat_registration
+    - bank_letter
+
+tax_id_formats:
+  India:
+    name: GSTIN
+    regex: '^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$'
+  US:
+    name: EIN
+    regex: '^\d{2}-?\d{7}$'
+  UK:
+    name: VAT
+    regex: '^(GB)?([0-9]{9}|[0-9]{12})$'
+
+bank_code_formats:
+  India:
+    name: IFSC
+    regex: '^[A-Z]{4}0[A-Z0-9]{6}$'
+  US:
+    name: routing_number
+    regex: '^\d{9}$'
+  UK:
+    any_of:
+      - name: sort_code
+        regex: '^\d{6}$'
+      - name: sort_code_dashed
+        regex: '^\d{2}-\d{2}-\d{2}$'
+      - name: SWIFT
+        regex: '^[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}([A-Z0-9]{3})?$'
+
+email_format:
+  regex: '^[^\s@]+@[^\s@]+\.[^\s@]+$'
+
+# Illustrative policy list only. Review against the organization's actual policy.
+blocked_countries:
+  - North Korea
+  - Iran
+
+name_similarity:
+  approval_threshold: 90
+  pending_threshold: 70
+
+bank_account_reuse:
+  # A matching account is considered a same-vendor resubmission only when both match.
+  same_vendor_identity_fields:
+    - tax_id
+    - company_name
+
+company_name_suffixes:
+  # Suffix phrases are removed only at the end of a name, longest phrase first.
+  normalize_to: ''
+  variants:
+    - Pvt Ltd
+    - Private Limited
+    - Pvt Limited
+    - Private Ltd
+    - Pvt
+    - Private
+    - Limited
+    - Ltd
+    - Incorporated
+    - Inc
+    - LLC
+    - L.L.C.
+    - LLP
+    - PLC
+    - Corp
+    - Corporation
+    - Co
+    - Company
+
+# Gemini is used only for document reading and communication drafts.
+ai:
+  model_name: gemini-3.5-flash-lite
+  # Keep prebuilt demo responses usable after upgrading the live model.
+  cache_compatibility_models:
+    - gemini-2.5-flash
+    - gemini-3.8-flash
+  timeout_seconds: 25
+  max_attempts: 2
+  retry_base_seconds: 2
+  retry_max_seconds: 8
+  cache_dir: cache

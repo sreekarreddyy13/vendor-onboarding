@@ -1,0 +1,18 @@
+# Local credentials and Streamlit deployment secrets.
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.streamlit/secrets.*.toml
+secrets.toml
+*.secrets.toml
+
+# Local runtime, test output, and SQLite state. Keep cache/ tracked for the demo.
+.venv/
+.runtime/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-*
+data/*.sqlite3
+data/uploads/

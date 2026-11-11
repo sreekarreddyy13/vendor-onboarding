@@ -1,0 +1,21 @@
+{
+  "company_name": "WILLOW CREEK SUPPLIES PRIVATE LIMITED",
+  "country": "India",
+  "tax_id": "33AACCU1234F1Z7",
+  "bank_account_number": "770000001234",
+  "bank_code": "ICIC0007890",
+  "bank_account_holder_name": "Willow Creek Supplies Private Limited",
+  "tax_certificate_name": "Willow Creek Supplies Pvt Ltd",
+  "bank_country": "India",
+  "contact_email": "accounts@willowcreek.example",
+  "documents": [
+    "certificate_of_incorporation",
+    "gst_registration",
+    "bank_letter"
+  ],
+  "document_files": {
+    "certificate_of_incorporation": "data/documents/resubmission_bank_letter_provided_incorporation_certificate.pdf",
+    "gst_registration": "data/documents/resubmission_bank_letter_provided_tax_registration_certificate.pdf",
+    "bank_letter": "data/documents/resubmission_bank_letter_provided_bank_confirmation_letter.pdf"
+  }
+}
